@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/BTeam_Project/StartScene.unity
+    guid: 692f231bc7652224daf14dc97714d0cd
+  - enabled: 1
+    path: Assets/Scenes/BTeam_Project/SpaceShip_MainScene.unity
+    guid: e03a952b2d075224fa140fe5fc9b46c3
+  - enabled: 1
+    path: Assets/Scenes/BTeam_Project/TutorialSystem_MoveStandBy.unity
+    guid: 7c5a9cb6d5bc35f41956273a27925fa2
+  - enabled: 1
+    path: Assets/Scenes/BTeam_Project/RoadViewBase_SpaceTour.unity
+    guid: e5568ffc9e3fdee46b07f9ee297c0e39
+  - enabled: 1
+    path: Assets/Scenes/BTeam_Project/MainScene_SlimeVer1.unity
+    guid: 550a53c5bc2085146a66b964e5b530a0
+  - enabled: 1
+    path: Assets/Scenes/BTeam_Project/SlimeGirl_HappyEnding.unity
+    guid: 0e01919dc2cd04a44af91043d2e7b04a
+  - enabled: 1
+    path: Assets/Scenes/BTeam_Project/SlimeGirl_SadEnding.unity
+    guid: 70b3bbc10ceab0c45859e232410648f9
+  - enabled: 1
+    path: Assets/Scenes/BTeam_Project/MainScene_SlimeVer2.unity
+    guid: c31b4be9d7ec4414dafc170a49658e9b
+  - enabled: 1
+    path: Assets/Scenes/BTeam_Project/LonelyEnding.unity
+    guid: d1ed9d5cd210bd34597371909143f21c
+  m_configObjects: {}
