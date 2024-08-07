@@ -715,6 +715,7 @@ MonoBehaviour:
   TextMessage: {fileID: 1617983540}
   offset: {x: 0, y: 1, z: 0}
   name: "\uC2AC\uB77C\uC784\uD589\uC1312"
+  isClear: 000000
   move_direction: {x: 0, y: 0, z: 0}
   playerCamera: {fileID: 0}
   moveSceneName: MainScene_SlimeVer2
@@ -3489,7 +3490,8 @@ MonoBehaviour:
   objMessage: {fileID: 462581719}
   TextMessage: {fileID: 1617983540}
   offset: {x: 0, y: 1, z: 0}
-  name: "\uC2AC\uB77C\uC784\uD589\uC131"
+  name: "\uBB34\uB108\uBB34\uB108\uD589\uC131"
+  isClear: 000000
   move_direction: {x: 0, y: 0, z: 0}
   playerCamera: {fileID: 0}
   moveSceneName: MainScene_SlimeVer1

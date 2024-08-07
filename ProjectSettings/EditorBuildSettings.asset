@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/BTeam_Project/StartScene.unity
-    guid: 692f231bc7652224daf14dc97714d0cd
+    guid: effba2f963814f449a001cd071cf2611
   - enabled: 1
     path: Assets/Scenes/BTeam_Project/SpaceShip_MainScene.unity
     guid: e03a952b2d075224fa140fe5fc9b46c3
@@ -17,9 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BTeam_Project/RoadViewBase_SpaceTour.unity
     guid: e5568ffc9e3fdee46b07f9ee297c0e39
-  - enabled: 1
-    path: Assets/Scenes/BTeam_Project/MainScene_SlimeVer1.unity
-    guid: 550a53c5bc2085146a66b964e5b530a0
   - enabled: 1
     path: Assets/Scenes/BTeam_Project/SlimeGirl_HappyEnding.unity
     guid: 0e01919dc2cd04a44af91043d2e7b04a

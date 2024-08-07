@@ -4198,7 +4198,7 @@ MonoBehaviour:
   - {fileID: 1869586231}
   - {fileID: 1702708490}
   - {fileID: 1033751499}
-  nextSceneName: TutorialSystem_MoveStandBy
+  nextSceneName: RoadViewBase_SpaceTour
   currentIndex: -1
   isCompleted: 0
   player: {fileID: 0}
@@ -6135,6 +6135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LoveRefuseDataObject: {fileID: 65096127}
   RefuseCount: 0
+  visit_planetList: 000000
 --- !u!4 &2046497470
 Transform:
   m_ObjectHideFlags: 0
