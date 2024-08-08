@@ -8,6 +8,7 @@ TagManager:
   - Pickupgroup2_false
   - Pickupgroup2_true
   - Pickupgroup1_false
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - Water
   - UI
   - PickupGroup
-  - 
+  - Enemy
   - 
   - 
   - 
