@@ -9,14 +9,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9005059622133209233}
-  - component: {fileID: 4595172618599264351}
   - component: {fileID: 2524299509108608152}
   - component: {fileID: 505279287244463729}
   - component: {fileID: 4063116925061053252}
   - component: {fileID: 4590599173066962998}
+  - component: {fileID: 6822868007643390886}
+  - component: {fileID: 1902768963762428185}
   m_Layer: 0
-  m_Name: Projectile
-  m_TagString: PlayerProjectile
+  m_Name: EnemyProjectile
+  m_TagString: EnemyProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,19 +37,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4595172618599264351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3098505890413756111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 029040aee0360c040a13630695f60e4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ExplosionParticle: {fileID: 3064406563204085755, guid: 52d083cd84b7e4a4eb25425ed8d823cd, type: 3}
 --- !u!54 &2524299509108608152
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -119,7 +107,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d4dcc95ace9b05848bdd1b0f55ee2779, type: 2}
+  - {fileID: 2100000, guid: 90405d74db8892342bb9391d5099e989, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -148,4 +136,33 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3098505890413756111}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &6822868007643390886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3098505890413756111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51179f59bb93e0844a2af3c8d95ff0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileDistance: 36
+  damage: 1
+  hit_effect_prefab: {fileID: 3064406563204085755, guid: 5ed329cf1438b1140beb3adb33e43ecf, type: 3}
+--- !u!114 &1902768963762428185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3098505890413756111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d102ec3a579344449b5e47593ecf8c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 30
+  moveDirection: {x: 0, y: 0, z: 0}

@@ -714,15 +714,15 @@ MonoBehaviour:
   objMessage: {fileID: 462581719}
   TextMessage: {fileID: 1617983540}
   offset: {x: 0, y: 1, z: 0}
-  name: "\uC2AC\uB77C\uC784\uD589\uC1312"
-  isClear: 000000
+  name: "\uD0C0\uB178\uC2A4\uD589\uC131"
   move_direction: {x: 0, y: 0, z: 0}
   playerCamera: {fileID: 0}
-  moveSceneName: MainScene_SlimeVer2
+  moveSceneName: MainScene_Tanos
   plantIndex: 1
   fadeinout: {fileID: 0}
   cameraMove: {fileID: 0}
   planetui: {fileID: 0}
+  maintain_gameDatamanager: {fileID: 0}
 --- !u!1 &452258051
 GameObject:
   m_ObjectHideFlags: 0
@@ -2569,6 +2569,7 @@ MonoBehaviour:
   CanControl: 1
   moveEffect: {fileID: 1528359271}
   Instance: {fileID: 0}
+  camera: {fileID: 0}
 --- !u!65 &1663314052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3490,15 +3491,15 @@ MonoBehaviour:
   objMessage: {fileID: 462581719}
   TextMessage: {fileID: 1617983540}
   offset: {x: 0, y: 1, z: 0}
-  name: "\uBB34\uB108\uBB34\uB108\uD589\uC131"
-  isClear: 000000
+  name: "\uC2AC\uB77C\uC784"
   move_direction: {x: 0, y: 0, z: 0}
   playerCamera: {fileID: 0}
-  moveSceneName: MainScene_SlimeVer1
+  moveSceneName: MainScene_SlimeVer2
   plantIndex: 0
   fadeinout: {fileID: 0}
   cameraMove: {fileID: 0}
   planetui: {fileID: 0}
+  maintain_gameDatamanager: {fileID: 0}
 --- !u!135 &2128618080
 SphereCollider:
   m_ObjectHideFlags: 0

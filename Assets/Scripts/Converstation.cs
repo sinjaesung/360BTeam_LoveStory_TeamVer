@@ -60,6 +60,7 @@ public class Converstation : MonoBehaviour
     public GameObject MarryMeSuggestUI;
 
     [SerializeField] private int mother_planetIndex;
+    [SerializeField] public int isGameOverDialogIndex = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -86,6 +87,12 @@ public class Converstation : MonoBehaviour
                 ONOFF(false); // 대사가 끝남
                 return; // 더 이상 진행하지 않도록 반환
             }
+        }
+
+        if (playercameracontroll.HeartCount_ <= 0)
+        {
+            Debug.Log("임의 맵 상의 Conversation> 체력0이하일시에 게임오버다이아로그 모두 공통 지정된 index값으로 지정>");
+            lovegameManager.activeConversationIndex = isGameOverDialogIndex;
         }
     }
 
@@ -220,8 +227,16 @@ public class Converstation : MonoBehaviour
                     {
                         Debug.Log("[[Conversation]]몬스터기쁨 결말 기쁨 결말 씬으로 이동 예정!!!");//DEBUG
                         //SceneManager.LoadScene(HappyEndingSceneName);
-                        MarryMeSuggestUI.SetActive(true);
-                        maintain_gameDatamanager.visit_planetList[mother_planetIndex] = true;
+                        if (playercameracontroll.HeartCount_ > 0)
+                        {
+                            MarryMeSuggestUI.SetActive(true);
+                            maintain_gameDatamanager.visit_planetList[mother_planetIndex] = true;
+                        }
+                        else
+                        {
+                            GameOverPanel.SetActive(true);
+                            maintain_gameDatamanager.visit_planetList[mother_planetIndex] = true;
+                        }
                     }
 
                     if(playercameracontroll.HeartCount_ <= 0)

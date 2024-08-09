@@ -226,15 +226,42 @@ public class LoveGameManager : MonoBehaviour
             }
         }
 
-      
-        if (player.LoveScore >= 10)
+        if (player.HeartCount_ <= 0)
         {
-            //Debug.Log("몬스터기쁨 결말 기쁨 결말 씬으로 이동 예정!!!");//DEBUG
-        }
-        else if(player.LoveScore < -8)
-        {
-            //Debug.Log("몬스터화남 결말 화남 결말 씬으로 이동 예정!!!");//DEBUG
-        }           
+            if (Sprite2DCharacterImage != null)
+            {
+                //독립적 몬스터 이미지(다른캐릭터화자와 공유하지 않음)
+                Sprite2DCharacterImage.sprite = images[0];
+            }
+            if (LoveMonsterState != null)
+            {
+                //독립적 몬스터 이미지(다른캐릭터화자와 공유하지 않음)
+                LoveMonsterState.sprite = images[0];
+            }
+            if (Character_Conversation_stateImage != null)
+            {
+                if (isVer2Env)//재현Ver 관련 행성씬 로직
+                {
+                    //다른 캐릭터화자와 공유하는 캐릭터이미지
+                    if (!activeConversation.isPlayerSpeak)
+                    {
+                        //플레이어가 아닌 캐릭터(몬스터등)이 말하는경우에만 동적으로 대화ui 화자 이미지 Swap
+                        Character_Conversation_stateImage.sprite = images[0];
+                        Debug.Log("플레이어 체력이 0이하인 경우 몬스터 화나게(MonsterSpeak)>>" + images[0].name);
+                    }
+                    else if (activeConversation.isPlayerSpeak)
+                    {
+                        Debug.Log("[[LoveGameManager]] 현재 Conversation name및 해당 개체에서 현재 말하고 있는 화자" + activeConversation.transform.name + ">SpeakerName:" + activeConversation.NowSpeakername);
+                        Debug.Log("[[LoveGameManager]] 화자가 플레이어인 경우로 동적 할당 접근을 하지 않는 개체의 경우이다");
+                        Debug.Log("플레이어 체력이 0이하인 경우 몬스터 화나게(PlayerSpeak)>>" + images[0].name);
+                    }
+                }
+                else//재성Ver 관련 행성씬 로직
+                {
+                    Character_Conversation_stateImage.sprite = images[0];
+                }
+            }
+        }         
     }
 
     public void GameOver()

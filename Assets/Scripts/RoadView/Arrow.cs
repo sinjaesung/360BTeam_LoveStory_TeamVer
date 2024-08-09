@@ -121,7 +121,7 @@ public class Arrow : MonoBehaviour
         if(isHover == true)
         {
             //Arrow월드좌표를 화면 스크린좌표로 바꿔준다.
-            Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position + offset);
+            Vector3 screenPos = Camera.WorldToScreenPoint(transform.position + offset);
 
             //나의 위치를 스크린좌표로 변경한 후 message의 위치를 변경
             objMessage.transform.position = screenPos;

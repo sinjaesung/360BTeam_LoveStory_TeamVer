@@ -25,11 +25,12 @@ public class TutorialPickUpHiddenObjectsVer2 : TutorialBaseVer2
     private ParticleSystem false_Particle;
 
     public Player3d_Planet player;
-
+    public Camera camera;
     public override void Enter()
     {
         Debug.Log("Conversation<->[[TutorialPickUpHiddenObjectsVer2]] Enter>>");
         player = FindObjectOfType<Player3d_Planet>();
+        camera = player.GetComponent<Camera>();
         player.IsMoved = true;//카메라 조작 가능하게 처리
 
         // 파괴해야할 오브젝트들을 활성화
@@ -65,12 +66,12 @@ public class TutorialPickUpHiddenObjectsVer2 : TutorialBaseVer2
     }
     private Ray GetMouseHitRay()
     {
-        Debug.Log("Camera.main.ScreenPointToRay(Input.mousePosition)>" + Camera.main.ScreenPointToRay(Input.mousePosition));
-        return Camera.main.ScreenPointToRay(Input.mousePosition);
+        Debug.Log("Camera.ScreenPointToRay(Input.mousePosition)>" + camera.ScreenPointToRay(Input.mousePosition));
+        return camera.ScreenPointToRay(Input.mousePosition);
     }
     void ScreenToWorld()
     {
-        // ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        // ray = Camera.ScreenPointToRay(Input.mousePosition);
 
         RaycastHit hitObject;
         if (Physics.Raycast(GetMouseHitRay(), out hitObject, 1000, PickUpLayer))

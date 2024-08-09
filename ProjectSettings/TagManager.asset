@@ -9,6 +9,11 @@ TagManager:
   - Pickupgroup2_true
   - Pickupgroup1_false
   - Enemy
+  - PlayerProjectile
+  - EnemyProjectile
+  - EnemyProjectileExplosion
+  - PlayerProjectileExplosion
+  - Wall
   layers:
   - Default
   - TransparentFX
