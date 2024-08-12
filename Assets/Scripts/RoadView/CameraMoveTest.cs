@@ -22,11 +22,9 @@ public class CameraMoveTest : MonoBehaviour
     [SerializeField] public ParticleSystem moveEffect;
 
     public CameraMoveTest Instance;
-    public Camera camera;
     void Start()
     {
         Instance = this;
-        camera = GetComponent<Camera>();
     }
     private void Update()
     {
@@ -59,12 +57,12 @@ public class CameraMoveTest : MonoBehaviour
 
     private Ray GetMouseHitRay()
     {
-        Debug.Log("Camera.ScreenPointToRay(Input.mousePosition)>" + camera.ScreenPointToRay(Input.mousePosition));
-        return camera.ScreenPointToRay(Input.mousePosition);
+        Debug.Log("Camera.main.ScreenPointToRay(Input.mousePosition)>" + Camera.main.ScreenPointToRay(Input.mousePosition));
+        return Camera.main.ScreenPointToRay(Input.mousePosition);
     }
     void ScreenToWorld()
     {
-        // ray = Camera.ScreenPointToRay(Input.mousePosition);
+        // ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         RaycastHit hitObject;
         if(Physics.Raycast(GetMouseHitRay(),out hitObject, 1000, RaycastMovePosLayer))
