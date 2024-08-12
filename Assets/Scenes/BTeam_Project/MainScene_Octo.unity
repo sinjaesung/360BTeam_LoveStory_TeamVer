@@ -365,6 +365,8 @@ MonoBehaviour:
   TargetTutorial: {fileID: 0}
   OXQuizPanel: {fileID: 0}
   isLastDialog: 0
+  isSceneMove: 0
+  MoveSceneName: 
   isPlayerSpeak: 1
   NowSpeakername: 
   ConversationIndex: 1
@@ -1508,6 +1510,8 @@ MonoBehaviour:
   TargetTutorial: {fileID: 0}
   OXQuizPanel: {fileID: 0}
   isLastDialog: 0
+  isSceneMove: 0
+  MoveSceneName: 
   isPlayerSpeak: 1
   NowSpeakername: 
   ConversationIndex: 0
@@ -3357,7 +3361,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyCodeFire: 32
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 3098505890413756111, guid: 1d2260c8d240bf549bf7eae1524de6ec, type: 3}
+  moveSpeed: 3
   camera: {fileID: 1218547034}
   fov: 0
   wheelSpeed: 200
@@ -3369,6 +3374,13 @@ MonoBehaviour:
   HealthSlider: {fileID: 1125574450}
   isGameOver: 0
   lovegameManager: {fileID: 0}
+  click_worldPosition: {x: 0, y: 0, z: 0}
+  ClickPosAreaIcon: {fileID: 0}
+  PickUpLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  lastViewDirection: {x: 0, y: 0, z: 0}
+  MoveDir: {x: 0, y: 0, z: 0}
 --- !u!1 &1230628960
 GameObject:
   m_ObjectHideFlags: 0
@@ -4260,6 +4272,8 @@ MonoBehaviour:
   TargetTutorial: {fileID: 0}
   OXQuizPanel: {fileID: 1540274600}
   isLastDialog: 0
+  isSceneMove: 0
+  MoveSceneName: 
   isPlayerSpeak: 1
   NowSpeakername: 
   ConversationIndex: 1
@@ -6611,6 +6625,8 @@ MonoBehaviour:
   TargetTutorial: {fileID: 0}
   OXQuizPanel: {fileID: 0}
   isLastDialog: 1
+  isSceneMove: 0
+  MoveSceneName: 
   isPlayerSpeak: 1
   NowSpeakername: 
   ConversationIndex: 5
@@ -6862,28 +6878,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2121043245}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0146cbf027f034c47ac2492c1385b552, type: 3}
+  m_Script: {fileID: 11500000, guid: a3e8ae4a4dc38884cafcbd26eab6ad9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Character_Conversation_stateImage: {fileID: 1825280858}
+  Character_Conversation_stateImage: {fileID: 0}
   LoveMonsterState: {fileID: 0}
   Sprite2DCharacterImage: {fileID: 0}
-  images:
-  - {fileID: 21300000, guid: 8c66b34843ff41f4394555cd039b5631, type: 3}
-  - {fileID: 21300000, guid: e97d4f85f1a75c84ea10aefe20405146, type: 3}
-  - {fileID: 21300000, guid: b8bf1631e0ac6364b987d989525661da, type: 3}
-  - {fileID: 21300000, guid: 02f3b1ca62f2b614a8711f5a5005d9d0, type: 3}
-  - {fileID: 21300000, guid: 330127cf7feaf2a498ad0b815ec95139, type: 3}
+  images: []
   activeConversation: {fileID: 0}
   activeConversationIndex: 0
-  isVer2Env: 1
-  conversations:
-  - {fileID: 367639818}
-  - {fileID: 1536845902}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  gameoverCon: {fileID: 2034997518}
+  isVer2Env: 0
+  conversations: []
+  gameoverCon: {fileID: 0}
   group1: {fileID: 0}
   group2: {fileID: 0}
 --- !u!1 &3040984751440153784 stripped

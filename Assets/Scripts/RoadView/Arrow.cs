@@ -112,7 +112,7 @@ public class Arrow : MonoBehaviour
         fadeinout.StartFadeIn();
         yield return new WaitForSeconds(waitTime);
         //Debug.Log("fadeinout효과가 모두 끝난 waitTime후에 씬 전환" + waitTime);
-        //Debug.Log($"해당 {transform.name}행성 관련 씬으로 이동 [[Planet Scene Move]]>>" + moveSceneName);
+        Debug.Log($"해당 {transform.name}행성 관련 씬으로 이동 [[Planet Scene Move]]>>" + moveSceneName);
         SceneManager.LoadScene(moveSceneName);
     }
 

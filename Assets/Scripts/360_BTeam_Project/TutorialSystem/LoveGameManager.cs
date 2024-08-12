@@ -46,6 +46,11 @@ public class LoveGameManager : MonoBehaviour
             activeConversation = conversations[activeConversationIndex];
         }
 
+        if (!player)
+        {
+            return;
+        }
+
         if (player.LoveScore < -10)
         {
            // Debug.Log("[[LoveGameManager]]몬스터화남");

@@ -611,7 +611,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 94e8b543ccfce214cbe3536377799049, type: 3}
       propertyPath: m_Name
-      value: forest_SlimeVer2
+      value: SlimePlanet
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 94e8b543ccfce214cbe3536377799049, type: 3}
       propertyPath: m_Layer
@@ -714,15 +714,15 @@ MonoBehaviour:
   objMessage: {fileID: 462581719}
   TextMessage: {fileID: 1617983540}
   offset: {x: 0, y: 1, z: 0}
-  name: "\uC2AC\uB77C\uC784\uD589\uC1312"
-  isClear: 000000
+  name: "\uC2AC\uB77C\uC784"
   move_direction: {x: 0, y: 0, z: 0}
   playerCamera: {fileID: 0}
   moveSceneName: MainScene_SlimeVer2
-  plantIndex: 1
+  plantIndex: 0
   fadeinout: {fileID: 0}
   cameraMove: {fileID: 0}
   planetui: {fileID: 0}
+  maintain_gameDatamanager: {fileID: 0}
 --- !u!1 &452258051
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,8 +919,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetList:
-  - {fileID: 2128618079}
   - {fileID: 365801449}
+  - {fileID: 2128618079}
+  - {fileID: 2026434863}
   activePlanetIndex: 0
   confirmButton: {fileID: 557732430}
 --- !u!1 &462786406
@@ -1753,6 +1754,90 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1097076410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1097076411}
+  - component: {fileID: 1097076412}
+  m_Layer: 0
+  m_Name: ArrowIcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1097076411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097076410}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.9233754, y: -0.012641181, z: -0.3824746, w: -0.030518511}
+  m_LocalPosition: {x: 1.18, y: 14.33, z: 0.16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1584667681}
+  m_LocalEulerAnglesHint: {x: 183.786, y: 45, z: 0}
+--- !u!212 &1097076412
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097076410}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 23f6be5426b1baf4aa0c0f8c1034865b, type: 3}
+  m_Color: {r: 0.7405343, g: 0, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.93, y: 5.82}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1262602509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2231,6 +2316,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540654433}
   m_CullTransparentMesh: 1
+--- !u!1 &1584667680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1584667681}
+  m_Layer: 0
+  m_Name: "SceneMove_Planet3(\uBB38\uC5B4)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1584667681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584667680}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -112.6, y: 2.6, z: 21.5}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1097076411}
+  - {fileID: 2026434861}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1617983538
 GameObject:
   m_ObjectHideFlags: 0
@@ -3288,6 +3406,128 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952190937}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &2026434860
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1584667681}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+      propertyPath: m_Name
+      value: OctopusPlanet
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2026434864}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2026434863}
+  m_SourcePrefab: {fileID: 100100000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+--- !u!4 &2026434861 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+  m_PrefabInstance: {fileID: 2026434860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2026434862 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+  m_PrefabInstance: {fileID: 2026434860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2026434863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026434862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9139782e7744d6c429e5bfc764f3801c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objMessage: {fileID: 462581719}
+  TextMessage: {fileID: 1617983540}
+  offset: {x: 0, y: 1, z: 0}
+  name: "\uBB38\uC5B4"
+  move_direction: {x: 0, y: 0, z: 0}
+  playerCamera: {fileID: 0}
+  moveSceneName: MainScene_Octo
+  plantIndex: 2
+  fadeinout: {fileID: 0}
+  cameraMove: {fileID: 0}
+  planetui: {fileID: 0}
+  maintain_gameDatamanager: {fileID: 0}
+--- !u!135 &2026434864
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026434862}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 28
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2071843878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3408,7 +3648,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: ee6535f71428504449546c25c0673573, type: 3}
       propertyPath: m_Name
-      value: egipt_SlimeVer1
+      value: TanosPlanet
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ee6535f71428504449546c25c0673573, type: 3}
       propertyPath: m_Layer
@@ -3490,15 +3730,15 @@ MonoBehaviour:
   objMessage: {fileID: 462581719}
   TextMessage: {fileID: 1617983540}
   offset: {x: 0, y: 1, z: 0}
-  name: "\uBB34\uB108\uBB34\uB108\uD589\uC131"
-  isClear: 000000
+  name: "\uD0C0\uB178\uC2A4"
   move_direction: {x: 0, y: 0, z: 0}
   playerCamera: {fileID: 0}
-  moveSceneName: MainScene_SlimeVer1
-  plantIndex: 0
+  moveSceneName: MainScene_Tanos
+  plantIndex: 1
   fadeinout: {fileID: 0}
   cameraMove: {fileID: 0}
   planetui: {fileID: 0}
+  maintain_gameDatamanager: {fileID: 0}
 --- !u!135 &2128618080
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3531,5 +3771,6 @@ SceneRoots:
   - {fileID: 154316728}
   - {fileID: 1262602510}
   - {fileID: 1320336727}
+  - {fileID: 1584667681}
   - {fileID: 1648663408}
   - {fileID: 62404156}
