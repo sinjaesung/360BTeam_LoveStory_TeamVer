@@ -145,13 +145,14 @@ public class Player3d_Planet : MonoBehaviour
                 }
                 else
                 {
+                    Debug.Log("플레이어(상하) 입력정보가 있는경우에만 해당 forward방향으로 이동");
                     var moveDirection = -transform.forward;
                     moveDirection = new Vector3(moveDirection.x, transform.position.y, moveDirection.z);
 
                     transform.position += moveDirection * moveSpeed * Time.deltaTime;
                     MoveDir = moveDirection;
                 }           
-            }else if (Input.GetAxisRaw("Horizontal")!=0)
+            }/*else if (Input.GetAxisRaw("Horizontal")!=0)
             {
                 float move_force = Input.GetAxisRaw("Horizontal");
 
@@ -159,7 +160,7 @@ public class Player3d_Planet : MonoBehaviour
 
                 transform.position += moveDirection * moveSpeed * Time.deltaTime;
                 MoveDir = moveDirection;
-            }
+            }*/
         }
 
         if (IsAttacked == true)

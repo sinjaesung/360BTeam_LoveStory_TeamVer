@@ -319,7 +319,7 @@ MonoBehaviour:
     dialogue: Test!
     isDynamicCg: 0
   - cg: {fileID: 0}
-    speakerShape: {fileID: 21300000, guid: 27e5c432b6f4564448a6beaaf6a333c6, type: 3}
+    speakerShape: {fileID: 21300000, guid: 701787b845551c142b53ab00884a286d, type: 3}
     dialogue: Test2
     isDynamicCg: 1
   playercameracontroll: {fileID: 1218547038}
@@ -343,7 +343,7 @@ MonoBehaviour:
   isDynamicScene: 1
   maintain_gameDatamanager: {fileID: 0}
   MarryMeSuggestUI: {fileID: 8081194739065323014}
-  mother_planetIndex: 0
+  mother_planetIndex: 2
 --- !u!1 &100715325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,7 +1487,7 @@ MonoBehaviour:
   isDynamicScene: 0
   maintain_gameDatamanager: {fileID: 0}
   MarryMeSuggestUI: {fileID: 0}
-  mother_planetIndex: 0
+  mother_planetIndex: 2
 --- !u!1 &389215686
 GameObject:
   m_ObjectHideFlags: 0
@@ -3951,7 +3951,7 @@ MonoBehaviour:
   isDynamicScene: 0
   maintain_gameDatamanager: {fileID: 0}
   MarryMeSuggestUI: {fileID: 0}
-  mother_planetIndex: 0
+  mother_planetIndex: 2
 --- !u!1 &1540274600
 GameObject:
   m_ObjectHideFlags: 0
@@ -4104,7 +4104,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 12, y: 12, z: 12}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6062,11 +6062,11 @@ MonoBehaviour:
   dialogueCnt: 0
   dialogue:
   - cg: {fileID: 0}
-    speakerShape: {fileID: 21300000, guid: 27e5c432b6f4564448a6beaaf6a333c6, type: 3}
+    speakerShape: {fileID: 21300000, guid: 701787b845551c142b53ab00884a286d, type: 3}
     dialogue: "\uD558... \uC2E4\uB9DD\uC774\uC57C \uC778\uAC04"
-    isDynamicCg: 0
-  - cg: {fileID: 21300000, guid: 6feecbb3398deca4bb0fdc65aeca9c46, type: 3}
-    speakerShape: {fileID: 21300000, guid: 27e5c432b6f4564448a6beaaf6a333c6, type: 3}
+    isDynamicCg: 1
+  - cg: {fileID: 0}
+    speakerShape: {fileID: 21300000, guid: 701787b845551c142b53ab00884a286d, type: 3}
     dialogue: "\uB10C \uC774\uC81C \uD544\uC694\uC5C6\uC5B4"
     isDynamicCg: 1
   - cg: {fileID: 21300000, guid: 5ebdc37aa1b120e49a525049ea17c251, type: 3}
@@ -6074,7 +6074,7 @@ MonoBehaviour:
     dialogue: "\uC5B4... \uC544... \uC548\uB3FC!!!"
     isDynamicCg: 0
   - cg: {fileID: 0}
-    speakerShape: {fileID: 21300000, guid: 27e5c432b6f4564448a6beaaf6a333c6, type: 3}
+    speakerShape: {fileID: 21300000, guid: 701787b845551c142b53ab00884a286d, type: 3}
     dialogue: ~~~~~~~~~~@_@~~~~~~~~~~~(Result)
     isDynamicCg: 1
   playercameracontroll: {fileID: 0}
@@ -6098,7 +6098,7 @@ MonoBehaviour:
   isDynamicScene: 1
   maintain_gameDatamanager: {fileID: 0}
   MarryMeSuggestUI: {fileID: 8081194739065323014}
-  mother_planetIndex: 1
+  mother_planetIndex: 2
 --- !u!1 &2075040384
 GameObject:
   m_ObjectHideFlags: 0

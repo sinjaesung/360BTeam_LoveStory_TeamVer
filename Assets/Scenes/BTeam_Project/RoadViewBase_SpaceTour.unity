@@ -718,7 +718,7 @@ MonoBehaviour:
   name: "\uC2AC\uB77C\uC784"
   move_direction: {x: 0, y: 0, z: 0}
   playerCamera: {fileID: 0}
-  moveSceneName: MainScene_SlimeVer2
+  moveSceneName: MainScene_Slime
   plantIndex: 0
   fadeinout: {fileID: 0}
   cameraMove: {fileID: 0}

@@ -7,26 +7,23 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/BTeam_Project/StartScene.unity
-    guid: effba2f963814f449a001cd071cf2611
+    guid: edde3e04cef6df3498ba1600eda7b31f
   - enabled: 1
     path: Assets/Scenes/BTeam_Project/SpaceShip_MainScene.unity
     guid: e03a952b2d075224fa140fe5fc9b46c3
   - enabled: 1
-    path: Assets/Scenes/BTeam_Project/Dummy/TutorialSystem_MoveStandBy.unity
-    guid: 7c5a9cb6d5bc35f41956273a27925fa2
-  - enabled: 1
     path: Assets/Scenes/BTeam_Project/RoadViewBase_SpaceTour.unity
     guid: e5568ffc9e3fdee46b07f9ee297c0e39
   - enabled: 1
-    path: Assets/Scenes/BTeam_Project/MainScene_SlimeVer2.unity
+    path: Assets/Scenes/BTeam_Project/MainScene_Slime.unity
     guid: c31b4be9d7ec4414dafc170a49658e9b
   - enabled: 1
     path: Assets/Scenes/BTeam_Project/MainScene_Tanos.unity
     guid: 550eb04fbce47264b94332931f43f11e
   - enabled: 1
-    path: Assets/Scenes/BTeam_Project/LonelyEnding.unity
-    guid: d1ed9d5cd210bd34597371909143f21c
-  - enabled: 1
     path: Assets/Scenes/BTeam_Project/MainScene_Octo.unity
     guid: fbbabf7aee759ac48b2b0f3e45a789a7
+  - enabled: 1
+    path: Assets/Scenes/BTeam_Project/LonelyEnding.unity
+    guid: d1ed9d5cd210bd34597371909143f21c
   m_configObjects: {}
