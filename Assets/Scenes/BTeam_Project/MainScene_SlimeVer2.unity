@@ -2390,7 +2390,7 @@ MonoBehaviour:
   isPlayerSpeak: 1
   NowSpeakername: 
   ConversationIndex: 4
-  lovegameManager: {fileID: 0}
+  lovegameManager: {fileID: 755433031387293959}
   isDynamicScene: 1
   maintain_gameDatamanager: {fileID: 0}
   MarryMeSuggestUI: {fileID: 8081194739065323014}
@@ -7167,35 +7167,35 @@ MonoBehaviour:
     speakerShape: {fileID: 21300000, guid: df65e01a6fa0f354c8a876389e632042, type: 3}
     dialogue: "\uC800\uAE30..."
     isDynamicCg: 0
-  - cg: {fileID: 0}
+  - cg: {fileID: 21300000, guid: b8bf1631e0ac6364b987d989525661da, type: 3}
     speakerShape: {fileID: 21300000, guid: 27e5c432b6f4564448a6beaaf6a333c6, type: 3}
     dialogue: '!!!!'
-    isDynamicCg: 1
+    isDynamicCg: 0
   - cg: {fileID: 0}
     speakerShape: {fileID: 21300000, guid: aaec44175ba21b24c8832ad5d8b9515b, type: 3}
     dialogue: "\uB9D0\uC744\uAC78\uC790 \uC18C\uB140\uB294 \uB180\uB780 \uBAA8\uC2B5\uC744
       \uD558\uBA70 \uBAA8\uC2B5\uC774 \uBC14\uB00C\uC5C8\uB2E4!"
-    isDynamicCg: 1
-  - cg: {fileID: 0}
+    isDynamicCg: 0
+  - cg: {fileID: 21300000, guid: 8c66b34843ff41f4394555cd039b5631, type: 3}
     speakerShape: {fileID: 21300000, guid: 27e5c432b6f4564448a6beaaf6a333c6, type: 3}
     dialogue: ......
-    isDynamicCg: 1
+    isDynamicCg: 0
   - cg: {fileID: 21300000, guid: 5ebdc37aa1b120e49a525049ea17c251, type: 3}
     speakerShape: {fileID: 21300000, guid: df65e01a6fa0f354c8a876389e632042, type: 3}
     dialogue: "\uC5B4... \uC548\uB155?"
     isDynamicCg: 0
-  - cg: {fileID: 0}
+  - cg: {fileID: 21300000, guid: 8c66b34843ff41f4394555cd039b5631, type: 3}
     speakerShape: {fileID: 21300000, guid: 27e5c432b6f4564448a6beaaf6a333c6, type: 3}
     dialogue: ......
-    isDynamicCg: 1
+    isDynamicCg: 0
   - cg: {fileID: 21300000, guid: 5ebdc37aa1b120e49a525049ea17c251, type: 3}
     speakerShape: {fileID: 21300000, guid: df65e01a6fa0f354c8a876389e632042, type: 3}
     dialogue: "\uB0A0... \uB0A0\uC528\uAC00 \uC88B...\uB124?"
     isDynamicCg: 0
-  - cg: {fileID: 0}
+  - cg: {fileID: 21300000, guid: 02f3b1ca62f2b614a8711f5a5005d9d0, type: 3}
     speakerShape: {fileID: 21300000, guid: 27e5c432b6f4564448a6beaaf6a333c6, type: 3}
     dialogue: ......
-    isDynamicCg: 1
+    isDynamicCg: 0
   - cg: {fileID: 21300000, guid: 5ebdc37aa1b120e49a525049ea17c251, type: 3}
     speakerShape: {fileID: 21300000, guid: df65e01a6fa0f354c8a876389e632042, type: 3}
     dialogue: "\uC800\uAC8C \uBB50\uC9C0...? \uC800\uAC78 \uCC3E\uC544\uB2EC\uB77C\uB294
@@ -7234,6 +7234,7 @@ GameObject:
   - component: {fileID: 1543036589}
   - component: {fileID: 1543036588}
   - component: {fileID: 1543036587}
+  - component: {fileID: 1543036590}
   m_Layer: 0
   m_Name: BackgroundSphere
   m_TagString: Untagged
@@ -7306,6 +7307,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1543036590
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543036586}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9e6e7e4366dfed347892c66f709c0e0d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.031
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1580095084
 GameObject:
   m_ObjectHideFlags: 0
@@ -7879,7 +7976,7 @@ Transform:
   m_GameObject: {fileID: 1702287297}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.03429438, z: -0, w: 0.99941176}
-  m_LocalPosition: {x: 3.03, y: -0.45, z: 9.02}
+  m_LocalPosition: {x: 2.69, y: -0.45, z: 11.09}
   m_LocalScale: {x: 0.26380008, y: 0.26380008, z: 0.26380008}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -10010,11 +10107,11 @@ MonoBehaviour:
   LoveMonsterState: {fileID: 0}
   Sprite2DCharacterImage: {fileID: 0}
   images:
-  - {fileID: 21300000, guid: 244e66fea366751418c7e9152a65dbed, type: 3}
-  - {fileID: 21300000, guid: 1d4776ac61d10c948b55546821f34a0b, type: 3}
-  - {fileID: 21300000, guid: 8df0b22b4058d3544907293ef33e24ec, type: 3}
-  - {fileID: 21300000, guid: d1c6004524847e54ea295fa5f486ba01, type: 3}
-  - {fileID: 21300000, guid: 1d59fc3296f1ae64cb0852ba4b9928b2, type: 3}
+  - {fileID: 21300000, guid: e97d4f85f1a75c84ea10aefe20405146, type: 3}
+  - {fileID: 21300000, guid: b8bf1631e0ac6364b987d989525661da, type: 3}
+  - {fileID: 21300000, guid: 8c66b34843ff41f4394555cd039b5631, type: 3}
+  - {fileID: 21300000, guid: b4dfc304d69fd4140b6355a4540eaf1d, type: 3}
+  - {fileID: 21300000, guid: 02f3b1ca62f2b614a8711f5a5005d9d0, type: 3}
   activeConversation: {fileID: 0}
   activeConversationIndex: 0
   isVer2Env: 1
@@ -10119,6 +10216,14 @@ PrefabInstance:
     - target: {fileID: 5999194922148245879, guid: 478d857da34cc6149af2b0ff4292fed2, type: 3}
       propertyPath: m_Name
       value: Character_DialogImagecg
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999194922148245879, guid: 478d857da34cc6149af2b0ff4292fed2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6890755695452539962, guid: 478d857da34cc6149af2b0ff4292fed2, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

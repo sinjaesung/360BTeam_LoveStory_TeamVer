@@ -2303,6 +2303,8 @@ MonoBehaviour:
   TargetTutorial: {fileID: 0}
   OXQuizPanel: {fileID: 0}
   isLastDialog: 0
+  isSceneMove: 0
+  MoveSceneName: 
   isPlayerSpeak: 1
   NowSpeakername: 
   ConversationIndex: 0
@@ -3083,6 +3085,8 @@ MonoBehaviour:
   TargetTutorial: {fileID: 1060768676}
   OXQuizPanel: {fileID: 0}
   isLastDialog: 0
+  isSceneMove: 0
+  MoveSceneName: 
   isPlayerSpeak: 1
   NowSpeakername: 
   ConversationIndex: 3
@@ -3209,6 +3213,8 @@ MonoBehaviour:
   TargetTutorial: {fileID: 0}
   OXQuizPanel: {fileID: 0}
   isLastDialog: 1
+  isSceneMove: 0
+  MoveSceneName: 
   isPlayerSpeak: 1
   NowSpeakername: 
   ConversationIndex: 4
@@ -7891,6 +7897,8 @@ MonoBehaviour:
   TargetTutorial: {fileID: 1125786968}
   OXQuizPanel: {fileID: 0}
   isLastDialog: 0
+  isSceneMove: 0
+  MoveSceneName: 
   isPlayerSpeak: 1
   NowSpeakername: 
   ConversationIndex: 1
@@ -7910,6 +7918,7 @@ GameObject:
   - component: {fileID: 1543036589}
   - component: {fileID: 1543036588}
   - component: {fileID: 1543036587}
+  - component: {fileID: 1543036590}
   m_Layer: 0
   m_Name: BackgroundSphere
   m_TagString: Untagged
@@ -7982,6 +7991,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1543036590
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543036586}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5be31aa1cac5eb84385d97ce14667ab0, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.043
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1584528572
 GameObject:
   m_ObjectHideFlags: 0
@@ -8064,6 +8169,8 @@ MonoBehaviour:
   TargetTutorial: {fileID: 0}
   OXQuizPanel: {fileID: 0}
   isLastDialog: 0
+  isSceneMove: 0
+  MoveSceneName: 
   isPlayerSpeak: 1
   NowSpeakername: 
   ConversationIndex: 2
@@ -9022,7 +9129,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 960, y: -540}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_SizeDelta: {x: 2400, y: 1350}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1825280858
 MonoBehaviour:
@@ -10507,6 +10614,8 @@ MonoBehaviour:
   TargetTutorial: {fileID: 0}
   OXQuizPanel: {fileID: 0}
   isLastDialog: 1
+  isSceneMove: 0
+  MoveSceneName: 
   isPlayerSpeak: 1
   NowSpeakername: 
   ConversationIndex: 5
