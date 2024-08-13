@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static UnityEditor.SceneView;
 
 /*
  * 씬을 이동하는 용도의 Arrow

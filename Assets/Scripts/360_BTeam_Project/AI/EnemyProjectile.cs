@@ -24,6 +24,7 @@ public class EnemyProjectile : MonoBehaviour
         projectileDistance = attack_distance;
 
         StartCoroutine("OnMove", position);
+        SoundManager.instance.PlaySE("Thanos_GunSound");
     }
     private void Update()
     {

@@ -15,6 +15,7 @@ public class Projectile : MonoBehaviour
         player = FindObjectOfType<Player3d_Planet>();
         Debug.Log("타노스 미니게임 3d Projectile 이동관련>>" + direction);
         moveDirection = direction;
+        SoundManager.instance.PlaySE("Thanos_GunSound");
     }
 
     private void Update()

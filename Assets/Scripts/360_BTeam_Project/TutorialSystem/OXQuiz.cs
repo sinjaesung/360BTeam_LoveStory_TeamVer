@@ -93,6 +93,7 @@ public class OXQuiz : MonoBehaviour
         Debug.Log("Å¬¸¯");
         cgImg.sprite = Correct_Cg;
         NextQuiz();
+        SoundManager.instance.PlaySE("Quiz_O_correct");
     }
 
     public void WrongAnswer()
@@ -101,6 +102,7 @@ public class OXQuiz : MonoBehaviour
         cgImg.sprite = Wrong_Cg;
         player.HeartCount_ -= 1;
         NextQuiz();
+        SoundManager.instance.PlaySE("Quiz_O_wrong");
     }
 
     public void GameOver()

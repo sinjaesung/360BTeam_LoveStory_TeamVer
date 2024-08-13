@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 029040aee0360c040a13630695f60e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExplosionParticle: {fileID: 3064406563204085755, guid: 52d083cd84b7e4a4eb25425ed8d823cd, type: 3}
+  ExplosionParticle: {fileID: 162584487599433031, guid: 7f6412bd477f8354b974286d5b0d6b17, type: 3}
   projectileDistance: 30
   player: {fileID: 0}
 --- !u!33 &7757464715979621186
@@ -67,7 +67,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3098505890413756111}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

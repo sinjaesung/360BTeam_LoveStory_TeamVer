@@ -9,6 +9,7 @@ public class Player3d_Planet : MonoBehaviour
     private GameObject projectilePrefab;//3d 공격 프로젝타일>>
     [SerializeField] private float moveSpeed = 3;
 
+    public bool IsMovefreezeScene = false;
     public bool IsMoved { set; get; } = true;  // 이동 가능 여부
     public bool IsAttacked { set; get; } = false;   // 공격 가능 여부
 
@@ -130,37 +131,32 @@ public class Player3d_Planet : MonoBehaviour
             camera.transform.eulerAngles = new Vector3(roll, pitch, 0);//x축회전,y축회전 반영
 
             //플레이어 이동하는 기능 추가>>
-            if (Input.GetAxisRaw("Vertical")!=0)
+            if (!IsMovefreezeScene)
             {
-
-                if (Input.GetAxisRaw("Vertical") > 0)
+                if (Input.GetAxisRaw("Vertical") != 0)
                 {
-                    Debug.Log("플레이어(상하) 입력정보가 있는경우에만 해당 forward방향으로 이동");
 
-                    var moveDirection = transform.forward;
-                    moveDirection = new Vector3(moveDirection.x, transform.position.y, moveDirection.z);
+                    if (Input.GetAxisRaw("Vertical") > 0)
+                    {
+                        Debug.Log("플레이어(상하) 입력정보가 있는경우에만 해당 forward방향으로 이동");
 
-                    transform.position += moveDirection * moveSpeed * Time.deltaTime;
-                    MoveDir = moveDirection;
+                        var moveDirection = transform.forward;
+                        moveDirection = new Vector3(moveDirection.x, transform.position.y, moveDirection.z);
+
+                        transform.position += moveDirection * moveSpeed * Time.deltaTime;
+                        MoveDir = moveDirection;
+                    }
+                    else
+                    {
+                        Debug.Log("플레이어(상하) 입력정보가 있는경우에만 해당 forward방향으로 이동");
+                        var moveDirection = -transform.forward;
+                        moveDirection = new Vector3(moveDirection.x, transform.position.y, moveDirection.z);
+
+                        transform.position += moveDirection * moveSpeed * Time.deltaTime;
+                        MoveDir = moveDirection;
+                    }
                 }
-                else
-                {
-                    Debug.Log("플레이어(상하) 입력정보가 있는경우에만 해당 forward방향으로 이동");
-                    var moveDirection = -transform.forward;
-                    moveDirection = new Vector3(moveDirection.x, transform.position.y, moveDirection.z);
-
-                    transform.position += moveDirection * moveSpeed * Time.deltaTime;
-                    MoveDir = moveDirection;
-                }           
-            }/*else if (Input.GetAxisRaw("Horizontal")!=0)
-            {
-                float move_force = Input.GetAxisRaw("Horizontal");
-
-                var moveDirection = new Vector3(1, 0, 0) * move_force;
-
-                transform.position += moveDirection * moveSpeed * Time.deltaTime;
-                MoveDir = moveDirection;
-            }*/
+            }
         }
 
         if (IsAttacked == true)

@@ -30,6 +30,7 @@ public class ClickEvent : MonoBehaviour, IPointerEnterHandler
             playercamera.IsMoved = false;
             CanClick = false;
             lovegameManager.activeConversationIndex++;
+            SoundManager.instance.PlaySE("Monster_Click_Sound");
         }
     }
     public void OnPointerEnter(PointerEventData eventData)

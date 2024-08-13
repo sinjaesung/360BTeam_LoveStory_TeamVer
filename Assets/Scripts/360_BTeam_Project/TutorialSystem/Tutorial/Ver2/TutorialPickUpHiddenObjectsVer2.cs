@@ -90,6 +90,7 @@ public class TutorialPickUpHiddenObjectsVer2 : TutorialBaseVer2
                 Instantiate(True_Particle, hitObject.point, Quaternion.identity);
                 catchCount++;
                 player.LoveScore += 10;
+                SoundManager.instance.PlaySE("Slime_O_Clear");
             }
             else
             {
