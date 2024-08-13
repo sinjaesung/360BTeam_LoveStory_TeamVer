@@ -584,7 +584,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1060768675}
@@ -622,7 +622,7 @@ MonoBehaviour:
   - {fileID: 830170206}
   - {fileID: 128843499}
   tagName: Pickupgroup2_true
-  True_Particle: {fileID: 8081649531865080062, guid: 75c7b6274afecba499e528b548161f9f, type: 3}
+  True_Particle: {fileID: 1209291434399492853, guid: 07caea2ac8f127643b92e2079631f1be, type: 3}
   false_Particle: {fileID: 6913696027758794721, guid: e6a29505aaf9ab54fb0ebaaa47f19634, type: 3}
   player: {fileID: 1218547038}
 --- !u!1 &124133996
@@ -9433,7 +9433,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1125786967}
@@ -9471,7 +9471,7 @@ MonoBehaviour:
   - {fileID: 1961542188}
   - {fileID: 966592135}
   tagName: Pickupgroup1_true
-  True_Particle: {fileID: 8081649531865080062, guid: 75c7b6274afecba499e528b548161f9f, type: 3}
+  True_Particle: {fileID: 1209291434399492853, guid: 07caea2ac8f127643b92e2079631f1be, type: 3}
   false_Particle: {fileID: 6913696027758794721, guid: e6a29505aaf9ab54fb0ebaaa47f19634, type: 3}
   player: {fileID: 1218547038}
 --- !u!1 &1961542188
@@ -10533,6 +10533,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7467871993784948197, guid: 939202818aeea6247ab8c8a3bb7714e3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 266cd2bfa97589f449e548399ad6af31, type: 3}
     - target: {fileID: 8265770358222906684, guid: 939202818aeea6247ab8c8a3bb7714e3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
