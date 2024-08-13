@@ -101,8 +101,9 @@ public class Converstation : MonoBehaviour
         //dialogueCnt = 0;
         NextDialogue(); //호출되자마자 대사가 진행될 수 있도록 
     }
-    private void ONOFF(bool _flag)
+    public void ONOFF(bool _flag)
     {
+        Debug.Log("Conversation ONOFF 대화가 끝남요청시>>" + _flag);
         sprite_Box.gameObject.SetActive(_flag);//대화창박스활성화
         sprite_CG.gameObject.SetActive(_flag);//대화창몬스터Sprite활성화
         txt_Dialogue.gameObject.SetActive(_flag);//대화텍스트활성화

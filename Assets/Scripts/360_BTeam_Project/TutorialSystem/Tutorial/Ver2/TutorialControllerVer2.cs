@@ -95,10 +95,13 @@ public class TutorialControllerVer2 : MonoBehaviour
             //TutorialController따로, 다이아로그(Conversation대화) 따로 독립적으로 존재하여 이와같이 조치
             Debug.Log("Conversation<->[[TutorialControllerVer2]]Ver2Scene에서 임의 튜토리얼Controller 통 한개 (미니게임)의 마무리시마다, " +
                 "연결된 다이아로그(Conversation) 연결"+Target_Dialogue.transform.name);
-            Target_Dialogue.SetActive(true);
-            Debug.Log("액션 튜토리얼통Wrapper 모두 끝나고 타깃 다음 다이아로그 넘어감 activeConversationIndex증가>>");
-            lovegameManager.activeConversationIndex++;
-            //튜토리얼->다이아로그 케이스
+            if (player.HeartCount_ > 0)
+            {
+                Target_Dialogue.SetActive(true);
+                Debug.Log("액션 튜토리얼통Wrapper 모두 끝나고 타깃 다음 다이아로그 넘어감 activeConversationIndex증가>>");
+                lovegameManager.activeConversationIndex++;
+                //튜토리얼->다이아로그 케이스
+            }
         }
     }
 }

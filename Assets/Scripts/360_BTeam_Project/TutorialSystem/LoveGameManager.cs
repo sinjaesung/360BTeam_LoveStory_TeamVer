@@ -244,7 +244,12 @@ public class LoveGameManager : MonoBehaviour
 
     public void GameOver()
     {
-        //Debug.Log("게임오버>>");      
+        //Debug.Log("게임오버>>");
+        Debug.Log("미니게임중에 게임오버시에 acitveConversationIndex 갱신요청하고,기존 activeConverstation끈다>" + activeConversation.ConversationIndex);
+         activeConversation.ONOFF(false);
+         activeConversationIndex = gameoverCon.GetComponent<Converstation>().ConversationIndex;
+        Debug.Log("미니게임중에 게임오버시에 acitveConversationIndex 갱신요청하고,기존 activeConverstation끈다>" + activeConversationIndex+"->"+activeConversation.transform.name);
+
         gameoverCon.SetActive(true);
         group1.SetActive(false);
         group2.SetActive(false);        
