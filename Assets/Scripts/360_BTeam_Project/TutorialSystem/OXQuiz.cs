@@ -90,12 +90,14 @@ public class OXQuiz : MonoBehaviour
 
     public void CorrectAnswer()
     {
+        Debug.Log("클릭");
         cgImg.sprite = Correct_Cg;
         NextQuiz();
     }
 
     public void WrongAnswer()
     {
+        Debug.Log("클릭");
         cgImg.sprite = Wrong_Cg;
         player.HeartCount_ -= 1;
         NextQuiz();

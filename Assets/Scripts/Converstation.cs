@@ -236,8 +236,7 @@ public class Converstation : MonoBehaviour
                 {
                     if (playercameracontroll != null)
                     {
-                        if (playercameracontroll.LoveScore >= 10)
-                        {
+                        
                             //Debug.Log("[[Conversation]]몬스터기쁨 결말 기쁨 결말 씬으로 이동 예정!!!");//DEBUG
                             //SceneManager.LoadScene(HappyEndingSceneName);
                             if (playercameracontroll.HeartCount_ > 0)
@@ -249,7 +248,7 @@ public class Converstation : MonoBehaviour
                                 GameOverPanel.SetActive(true);
                             }
                             maintain_gameDatamanager.visit_planetList[mother_planetIndex] = true;
-                        }
+                        
 
                         if (playercameracontroll.HeartCount_ <= 0)
                         {
