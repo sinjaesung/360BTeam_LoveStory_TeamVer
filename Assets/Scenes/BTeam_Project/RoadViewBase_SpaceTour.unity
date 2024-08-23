@@ -2053,10 +2053,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 1663314049}
   fov: 0
-  wheelSpeed: 10
+  wheelSpeed: 50
   roll: 0
   pitch: 0
-  mouseSpeed: 1000
+  mouseSpeed: 60
   autoTime: 0
   isDebugMode: 1
 --- !u!82 &1382146156

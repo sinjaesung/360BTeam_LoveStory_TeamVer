@@ -2538,7 +2538,7 @@ MonoBehaviour:
   roll: 0
   pitch: 0
   fov: 0
-  mouseSpeed: 200
+  mouseSpeed: 60
   isMove: 1
 --- !u!114 &1918290102
 MonoBehaviour:
@@ -2558,10 +2558,10 @@ MonoBehaviour:
   IsMovefreezeScene: 0
   camera: {fileID: 1918290099}
   fov: 0
-  wheelSpeed: 100
+  wheelSpeed: 50
   roll: 0
   pitch: 0
-  mouseSpeed: 200
+  mouseSpeed: 60
   loveScore_: 0
   HeartCount: 3
   HealthSlider: {fileID: 0}

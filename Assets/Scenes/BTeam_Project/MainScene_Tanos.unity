@@ -6391,10 +6391,10 @@ MonoBehaviour:
   IsMovefreezeScene: 0
   camera: {fileID: 1218547034}
   fov: 0
-  wheelSpeed: 200
+  wheelSpeed: 50
   roll: 0
   pitch: 0
-  mouseSpeed: 500
+  mouseSpeed: 60
   loveScore_: 0
   HeartCount: 3
   HealthSlider: {fileID: 281987473}
